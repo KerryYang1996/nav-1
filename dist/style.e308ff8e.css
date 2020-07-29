@@ -68,6 +68,7 @@ flex-direction: column;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 10px 0;
+    position: relative;
 }
 
 .siteList .site > .logo {
@@ -82,6 +83,11 @@ flex-direction: column;
 .siteList .site > .link {
     font-size: 14px;
     margin-top: 4px;
+}
+.siteList .site > .close {
+position: absolute;
+top: 0px;
+right: 0px;
 }
 .siteList .addButton {
     width: 160px;
