@@ -26,6 +26,16 @@ img{
   margin: 20px;
   display: flex;
   justify-content: space-between;
+  max-width: 400px;
+}
+/* 如果页面宽度大于500px，执行@media里面的样式，如果小于500px，则不考虑 */
+@media(min-width:500px){/*相当于对PC页面的设置，因为手机页面不会大于500px*/
+    .searchForm {
+    max-width: 400px;
+    /* margin:0 auto;当有最大宽度时margin：0 auto来实现居中 */
+    margin-left: auto;
+    margin-right: auto;
+}
 }
 .searchForm > input {
   width: 100%;
@@ -45,16 +55,37 @@ img{
   color:white;
   font-size: 18px;
 }
+
 .globalMain {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;/*居中*/
 }
 .siteList {
 display: flex;
 flex-wrap: wrap;
 margin: 20px;
 justify-content: space-between;
+/* border: 1px solid red ; */
+}
+@media(min-width:500px){
+    .siteList{
+     justify-content: flex-start;
+       margin-top: 60px;
+        margin-left: 0;
+        margin-right: -25px;/*将元素向左拖拽25像素，元素本身的位置不变*/
+    }
 }
 .siteList > li {
-/* border: 1px solid red; */
+/* border: 1px solid blue; */
+margin-bottom: 10px;
+
+}
+@media(min-width:500px){
+    .siteList > li {
+      
+        margin-right: 25px;
+        }
 }
 .siteList .site {
 /* border: 1px solid red ; */
@@ -69,6 +100,7 @@ flex-direction: column;
     border-radius: 4px;
     padding: 10px 0;
     position: relative;
+    cursor: pointer;
 }
 
 .siteList .site > .logo {
@@ -88,6 +120,11 @@ flex-direction: column;
 position: absolute;
 top: 0px;
 right: 0px;
+display: none;
+}
+.siteList .site:hover > .close {
+display: block;
+cursor: default;
 }
 .siteList .addButton {
     width: 160px;

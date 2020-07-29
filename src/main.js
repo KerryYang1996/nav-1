@@ -69,3 +69,13 @@ window.onbeforeunload = () => {
   const string = JSON.stringify(hashMap); //把hashMap变成字符串
   window.localStorage.setItem("x", string); /**存储到本地仓库 */
 };
+
+/*鼠标事件 */
+$(document).on("keypress", (e) => {
+  const { key } = e;
+  for (let i = 0; i < hashMap.length; i++) {
+    if (hashMap[i].logo.toLowerCase() === key) {
+      window.open(hashMap[i].url);
+    }
+  }
+});
