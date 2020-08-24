@@ -67,7 +67,7 @@ body {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto; /*居中*/
-  background: transparent;
+  /* background: transparent; */
 }
 .siteList {
   display: flex;
@@ -107,6 +107,7 @@ body {
   padding: 10px 0;
   position: relative;
   cursor: pointer;
+  background: white;
 }
 
 .siteList .site > .logo {
@@ -139,6 +140,7 @@ body {
   flex-direction: column;
   border: 1px solid #ddd;
   padding: 10px 0;
+  background: white;
 }
 .siteList .addButton .iconWrapper {
   display: flex;
