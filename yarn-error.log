@@ -1,0 +1,41 @@
+Arguments: 
+  D:\Software\nodejs\node.exe D:\Software\yarn\bin\yarn.js build
+
+PATH: 
+  D:\Software\cmder\vendor\git-for-windows\mingw64\bin;D:\Software\cmder\vendor\git-for-windows\usr\bin;C:\Users\Administrator\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Java\jdk-13.0.1\bin;C:\Program Files\Java\jdk-13.0.1\jre\bin;D:\Software\nodejs;D:\Software\yarn\bin;C:\Users\Administrator\Desktop;D:\Software\Hugo;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.4.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: D:\Jirengu\nav-1\package.json: Unexpected token : in JSON at position 9
+      at JSON.parse (<anonymous>)
+      at D:\Software\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (D:\Software\yarn\lib\cli.js:310:30)
+      at D:\Software\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  "scripts":{
+    "build":"rm -rf dist && parcel build src/index.html --no-minify --public-url ./"
+  },
+  {
+    "name": "nav-1",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:KerryYang1996/nav-1.git",
+    "author": "KerryYang <yys199605@outlook.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -22,7 +22,7 @@ img {
 }
 /*style*/
 body {
-  background: url("./images/青春.jpg") no-repeat;
+  background: url("/青春.d0dc292e.jpg") no-repeat;
   background-size: cover;
   position: relative;
 
@@ -153,3 +153,6 @@ body {
   font-size: 14px;
   margin-top: 4px;
 }
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
