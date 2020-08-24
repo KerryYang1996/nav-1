@@ -22,11 +22,8 @@ img {
 }
 /*style*/
 body {
-  background: url("/青春.d0dc292e.jpg") no-repeat;
+  background: url(/青春.d0dc292e.jpg) no-repeat;
   background-size: cover;
-  position: relative;
-
-  z-index: -3;
 }
 .searchForm {
   margin: 20px;
@@ -67,7 +64,6 @@ body {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto; /*居中*/
-  /* background: transparent; */
 }
 .siteList {
   display: flex;
@@ -107,7 +103,6 @@ body {
   padding: 10px 0;
   position: relative;
   cursor: pointer;
-  background: white;
 }
 
 .siteList .site > .logo {

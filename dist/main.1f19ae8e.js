@@ -140,7 +140,7 @@ var render = function render() {
   $siteList.find("li:not(.last)").remove();
   hashMap.forEach(function (node, index) {
     /*遍历所有节点*/
-    var $li = $("<li>\n      \n                <div class=\"site\">\n                  <div class=\"logo\">".concat(simplifyUrl(node.url)[0].toUpperCase(), "</div>\n                  <div class=\"link\">").concat(simplifyUrl(node.url), "</div>\n                  <div class=\"close\"> <svg class=\"icon\" >\n                  <use x-link:href=\"#icon-close\"></use>\n              </svg></div>\n                </div>\n        </li>")).insertBefore($lastLi);
+    var $li = $("<li>\n      \n                <div class=\"site\">\n                  <div class=\"logo\">".concat(simplifyUrl(node.url)[0].toUpperCase(), "</div>\n                  <div class=\"link\">").concat(simplifyUrl(node.url), "</div>\n                  <div class=\"close\"> <svg class=\"icon\" >\n                  <use xlink:href=\"#icon-close\"></use>\n              </svg></div>\n                </div>\n        </li>")).insertBefore($lastLi);
     $li.on("click", function () {
       window.open(node.url); //跳转到相应页面
     });
@@ -220,7 +220,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49558" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51487" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
