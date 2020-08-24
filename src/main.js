@@ -33,7 +33,7 @@ const render = () => {
                   )[0].toUpperCase()}</div>
                   <div class="link">${simplifyUrl(node.url)}</div>
                   <div class="close"> <svg class="icon" >
-                  <use xlink:href="#icon-close"></use>
+                  <use x-link:href="#icon-close"></use>
               </svg></div>
                 </div>
         </li>`).insertBefore($lastLi);
